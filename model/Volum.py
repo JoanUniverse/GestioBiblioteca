@@ -2,5 +2,19 @@ from model.Obra import Obra
 
 
 class Volum(Obra):
-    def __init__(self, nro):
+    def __init__(self, nro, autor, nrePags, referencia, titol):
+        Obra.__init__(self, autor, nrePags, referencia, titol)
         self.nro = nro
+
+    def retornaNro(self):
+        return self.nro
+
+    def setNro(self, nro):
+        self.nro = nro
+
+    def visualitza(self):
+        return "Numero del volum: {}".format(self.nro)
+
+
+v = Volum(9, "Ell", 12, 10, "Hey")
+print(v.visualitza())
