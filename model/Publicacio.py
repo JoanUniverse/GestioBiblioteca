@@ -19,5 +19,9 @@ class Publicacio():
         print ("Numero de referencia: {}".format(self.retornaReferencia()))
         print ("Titol de la publicacio: {}".format(self.retornaTitol()))
 
+    def __str__(self):
+        return self.referencia
 
+    def __eq__(self, other):
+        return self.referencia == other
 

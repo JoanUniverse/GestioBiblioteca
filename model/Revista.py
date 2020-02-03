@@ -23,6 +23,11 @@ class Revista(Publicacio):
         print ("Any de la revista: {}".format(self.retornaAny()))
         print ("Numero de revista: {}".format(self.retornaNro()))
 
+    def __str__(self):
+        return self.referencia
+
+    def __eq__(self, other):
+        return self.referencia == other
 
 r = Revista(2000, 11, 13, "Hola")
 r.visualitza()

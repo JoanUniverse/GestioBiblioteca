@@ -23,6 +23,12 @@ class Obra(Publicacio):
         print ("Nom de l'autor: {}".format(self.retornaAutor()))
         print ("Nombre de pagines de l'obra: {}".format(self.retornaNrePags()))
 
+    def __str__(self):
+        return self.referencia
+
+    def __eq__(self, other):
+        return self.referencia == other
+
 o = Obra("Jo", 100, 13, "Hola")
 o.setAutor("Mateix")
 o.visualitza()
