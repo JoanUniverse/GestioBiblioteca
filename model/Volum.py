@@ -21,5 +21,5 @@ class Volum(Obra):
     def __eq__(self, other):
         return self.referencia == other
     
-v = Volum(9, "Ell", 12, 10, "Hey")
-print(v.visualitza())
+# v = Volum(9, "Ell", 12, 10, "Hey")
+# print(v.visualitza())

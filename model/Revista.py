@@ -29,5 +29,5 @@ class Revista(Publicacio):
     def __eq__(self, other):
         return self.referencia == other
 
-r = Revista(2000, 11, 13, "Hola")
-r.visualitza()
+# r = Revista(2000, 11, 13, "Hola")
+# r.visualitza()

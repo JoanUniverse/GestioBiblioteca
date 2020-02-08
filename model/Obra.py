@@ -29,6 +29,6 @@ class Obra(Publicacio):
     def __eq__(self, other):
         return self.referencia == other
 
-o = Obra("Jo", 100, 13, "Hola")
-o.setAutor("Mateix")
-o.visualitza()
+# o = Obra("Jo", 100, 13, "Hola")
+# o.setAutor("Mateix")
+# o.visualitza()
