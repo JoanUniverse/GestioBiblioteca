@@ -20,16 +20,13 @@ class Revista(Publicacio):
         self.nro = nro
 
     def visualitza(self):
+        super(Revista, self).visualitza()
         print "---------- Revista ----------"
         print ("Any de la revista: {}".format(self.retornaAny()))
         print ("Numero de revista: {}".format(self.retornaNro()))
-        print "--------------------------------"
 
     def __str__(self):
-        return self.referencia
+        return "Any: {}, Numero: {}".format(self.any, self.nro)
 
     def __eq__(self, other):
         return self.referencia == other
-
-# r = Revista(2000, 11, 13, "Hola")
-# r.visualitza()

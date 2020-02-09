@@ -13,15 +13,12 @@ class Volum(Obra):
         self.nro = nro
 
     def visualitza(self):
+        super(Volum, self).visualitza()
         print "---------- Volum ----------"
         print "Numero del volum: {}".format(self.nro)
-        print "--------------------------------"
 
     def __str__(self):
-        return self.referencia
+        return "Numero de volum: {}".format(self.nro)
 
     def __eq__(self, other):
         return self.referencia == other
-    
-# v = Volum(9, "Ell", 12, 10, "Hey")
-# print(v.visualitza())
