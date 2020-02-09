@@ -13,7 +13,9 @@ class Volum(Obra):
         self.nro = nro
 
     def visualitza(self):
-        return "Numero del volum: {}".format(self.nro)
+        print "---------- Volum ----------"
+        print "Numero del volum: {}".format(self.nro)
+        print "--------------------------------"
 
     def __str__(self):
         return self.referencia

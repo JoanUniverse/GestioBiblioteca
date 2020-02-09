@@ -16,11 +16,13 @@ class Publicacio():
         self.titol = titol
 
     def visualitza(self):
+        print "---------- Publicacio ----------"
         print ("Numero de referencia: {}".format(self.retornaReferencia()))
         print ("Titol de la publicacio: {}".format(self.retornaTitol()))
+        print "--------------------------------"
 
     def __str__(self):
-        return str(self.referencia)
+        return "{}: {}".format(self.referencia, self.titol)
 
     def __eq__(self, other):
         return self.referencia == other

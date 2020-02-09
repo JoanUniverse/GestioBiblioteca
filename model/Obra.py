@@ -20,8 +20,10 @@ class Obra(Publicacio):
         self.nrePags = nrePags
 
     def visualitza(self):
+        print "---------- Obra ----------"
         print ("Nom de l'autor: {}".format(self.retornaAutor()))
         print ("Nombre de pagines de l'obra: {}".format(self.retornaNrePags()))
+        print "--------------------------------"
 
     def __str__(self):
         return self.referencia
